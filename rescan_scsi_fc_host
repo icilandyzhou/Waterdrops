@@ -1,0 +1,6 @@
+scan fc host
+echo "1" > /sys/class/fc_host/host2/issue_lip
+echo "1" > /sys/class/fc_host/host3/issue_lip 
+and  then scan scsi host
+echo "- - -" > /sys/class/scsi_host/host2/scan
+echo "- - -" > /sys/class/scsi_host/host3/scan 
