@@ -1,0 +1,8 @@
+We occasionally run into kernel panic when we attempt to reboot server to new kernel, moreover, remote console (AMM/RSA remote access  or vSphere vlient) is not available for us at all, in this case, we will have to seek the helps of onsite operations, perhaps, below tips may help us to avoid this before we reboot a server.
+Before you reboot server (i.e. you have installed the new kernel and completed everything for kernel patching, and will be doing reboot), you can follow below steps:
+1) Set default back to the current kernel seq number(e.g. "default=1") in grub
+2) Append "panic=20" to the end of line "kernel " for the new kernel items in grub
+3) Run "echo "savedefault --default=0 --once" | grub --batch"
+4) Reboot server - if kernel panic happens during this reboot, server will be rebooted into the working kernel, we need to log into server to investigate the reason to decide if the next steps will be taken or not. 
+5) If rebooted to new kernel without issues, set default to the new kernel(e.g. "default=0") and delete "panic=20" for the new kernel items in grub 
+6) Reboot server again
