@@ -1,0 +1,218 @@
+    1  apt-get install git-core
+    2  git config --global user.name="zhouhua"
+    3  git config --global user.name="icilandyzhou"
+    4  git -h
+    5  git config -h
+    6  git config --global -h
+    7  git config --global 
+    8  git config --global user.name "icilandyzhou"
+    9  git config --global user.email "zhouhua@qti.qualcomm.com"
+   10  git get-all
+   11  git config get-all
+   12  git config --get-all
+   13  git --get-all
+   14  git config --get-all
+   15  git config -l
+   16  ls .ssh
+   17  ssh-keygen -C 'zhouhua@qti.qualcomm.com' -t rsa
+   18  ls .ssh
+   19  ll .ssh
+   20  cat .ssh/id_rsa.pub 
+   21  ssh -v git@github.com
+   22  ssh -v https://github.com/icilandyzhou/Waterdrops.git
+   23  ssh -v git@github.com
+   24  ssh -v icilandyzhou@users.noreply.github.com
+   25  ssh -v git@github.com
+   26  pwd
+   27  ls
+   28  mkdir Andyzhou_git
+   29  cd Andyzhou_git/
+   30  ll
+   31  git clone https://github.com/icilandyzhou/Waterdrops.git
+   32  ll
+   33  cd Waterdrops/
+   34  ll
+   35  ls .git
+   36  cd ..
+   37  ls
+   38  pwd
+   39  ll
+   40  ls -a
+   41  ll
+   42  cd Waterdrops/
+   43  ll
+   44  ls .git
+   45  ls .git/branches/
+   46  ll
+   47  gedit update_linux_timezone
+   48  vi update_linux_timezone
+   49  vi rescan_scsi_fc_host
+   50  ll
+   51  git status
+   52  git add rescan_scsi_fc_host
+   53  git status
+   54  git push
+   55  git commit -m "add new file rescan scsi/fc"
+   56  git push
+   57  ll
+   58  ssh -v icilandyzhou@github.com
+   59  ll .ssh
+   60  ll /root/.ssh/
+   61  ls -ld /root/.ssh
+   62  chmod 644 /root/.ssh
+   63  ls -ld /root/.ssh
+   64  ls -l /root/.ssh
+   65  ssh -v icilandyzhou@github.com
+   66  ls -ld /root/.ssh/
+   67  chmod 700 /root/.ssh
+   68  ls -ld /root/.ssh/
+   69  ssh -v icilandyzhou@github.com
+   70  cat /root/.ssh/id_rsa.pub 
+   71  ssh -v icilandyzhou@github.com
+   72  ll
+   73  ll /root/.ssh
+   74  chmod 644 /root/.ssh/id_rsa
+   75  ll /root/.ssh
+   76  ssh -v icilandyzhou@github.com
+   77  ll /root/.ssh
+   78  chmod 600 /root/.ssh/id_rsa
+   79  ll /root/.ssh
+   80  vi /etc/ssh/sshd_config 
+   81  ll /etc/ssh/
+   82  ssh -v -i /root/.ssh/id_rsa icilandyzhou@github.com
+   83  chmod 644 /root/.ssh/id_rsa
+   84  ll /root/.ssh/
+   85  ssh -v -i /root/.ssh/id_rsa icilandyzhou@github.com
+   86  ssh -v  icilandyzhou@github.com
+   87  cat /root/.ssh/id_rsa
+   88  ssh -v -i /root/.ssh/id_rsa icilandyzhou@github.com
+   89  ssh-add
+   90  cd /root/.ssh
+   91  ssh-add
+   92  ssh -T icilandyzhou@github.com
+   93  ssh -vT icilandyzhou@github.com
+   94  ll
+   95  rm id_rsa
+   96  rm id_rsa.pub 
+   97  ll
+   98  rm known_hosts 
+   99  ssh-keygen -t rsa -C "251488715@qq.com"
+  100  ll
+  101  cat id_rsa
+  102  cat id_rsa.pub 
+  103  ll
+  104  cat id_rsa.pub 
+  105  ssh -vT icilandyzhou@github.com
+  106  ssh -v icilandyzhou@github.com
+  107  ssh-add
+  108  ssh -v icilandyzhou@github.com
+  109  ll
+  110  ls -ld /root/.ssh
+  111  chmod 755 /root/.ssh
+  112  ls -ld /root/.ssh
+  113  ll
+  114  ssh -v icilandyzhou@github.com
+  115  history |grep chmod
+  116  chmod 700 /root/.ssh/
+  117  ll
+  118  ls -ld /root/.ssh
+  119  /etc/init.d/ssh restart
+  120  ll
+  121  ssh -v icilandyzhou@github.com
+  122  ping 8.8.8.8
+  123  ifconfig
+  124  service network restart
+  125  /etc/init.d/network restart
+  126  /etc/init.d/networking restart
+  127  ifconfig
+  128  ping baidu.com
+  129  cat /etc/resolvconf/
+  130  netstat -rn
+  131  ping 10.4.133.1
+  132  ping qualnet.qualcomm.com
+  133  cat /etc/network/interfaces 
+  134  /etc/init.d/networking restart
+  135  ifconfig
+  136  sync
+  137  reboot
+  138  df -h
+  139  lvs
+  140  ls /local
+  141  lspci -vt
+  142  free -m
+  143  cat /proc/cpuinfo 
+  144  egrep '(svm|vmx)' /proc/cpuinfo 
+  145  egrep -o '(svm|vmx)' /proc/cpuinfo 
+  146  cat /etc/apt/sources.
+  147  cat /etc/apt/sources.list
+  148  ifconfig -a
+  149  apt-get install kvm qemu virtinst python-libvirt virt-viewer virt-manager bridge-utils libvirt-bin 
+  150  ifconfig
+  151  netstat -nr
+  152  brctl show
+  153  vi /etc/network/interfaces 
+  154  service network restart
+  155  /etc/init.d/networking restart
+  156  ifconfig
+  157  brctl show
+  158  ping 8.8.8.8
+  159  ping baidu.com
+  160  brctl show
+  161  cat /etc/resolvconf/
+  162  nslookup baidu.com
+  163  ping baidu.com
+  164  ping 8.8.8.8
+  165  virsh -c qemu:///system list
+  166  virt-manager 
+  167  /etc/init.d/libvirt-bin status
+  168  ls /etc/init.d
+  169  ls -l /etc/init.d/qemu-kvm 
+  170  ps -ef|grep kv
+  171  ps -ef|grep kvm
+  172  ls -l /etc/init.d/libvirt-bin 
+  173  service quem-kvm status
+  174  ls /
+  175  kvm -h
+  176  virsh -c qemu:///system list
+  177  history 
+  178  df -h
+  179  ls /opt
+  180  ls
+  181  mkdir /opt/kvm
+  182  brctl show
+  183  ifconfig
+  184  brctl show
+  185  df -h
+  186  fdisk -l
+  187  ll /var/lib/libvirt/images/
+  188  virt-install -h
+  189  virt-install --connect=qemu:///system --name Win7 --ram 1024 --vcpus=1 --os-type=windows --accelerate --hvm --disk path=/var/lib/libvirt/images/Win7.img,bus=virtio --location /dev/sdb1 --network bridge=bro,model=virtio --graphics none
+  190  virt-install --connect=qemu:///system --name Win7 --ram 1024 --vcpus=1 --os-type=windows --accelerate --hvm --disk path=/var/lib/libvirt/images/Win7.img,size=80,bus=virtio --location /dev/sdb1 --network bridge=br0,model=virtio --graphics none
+  191  df -h
+  192  ll /media/U
+  193  virsh -c qemu:///system list
+  194  df -h
+  195  umount /media/U
+  196  df -h
+  197  ls /sys/fs/cgroup/
+  198  ifconfig
+  199  ssh -v icilandyzhou@github
+  200  cat /etc/resolv
+  201  cat /etc/resolv.conf 
+  202  ping github
+  203  ping baidu.com
+  204  ping github
+  205  ssh -v icilandyzhou@github.com
+  206  ssh -v git@github.com
+  207  ssh  git@github.com
+  208  ssh -v git@github.com
+  209  cd Andyzhou_git/
+  210  ls
+  211  cd Waterdrops/
+  212  ll
+  213  git status
+  214  ssh-add
+  215  ll
+  216  virsh -c qemu:///system list
+  217  history
+  218  history > history_cmd
